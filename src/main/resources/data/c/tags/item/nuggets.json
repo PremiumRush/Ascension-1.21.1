@@ -1,0 +1,10 @@
+{
+  "values": [
+    "#c:nuggets/titanium",
+    "#c:nuggets/ferrotitanium",
+    {
+      "id": "#forge:nuggets",
+      "required": false
+    }
+  ]
+}

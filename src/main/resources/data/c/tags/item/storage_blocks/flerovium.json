@@ -1,0 +1,9 @@
+{
+  "values": [
+    "ascension:flerovium_block",
+    {
+      "id": "#forge:storage_blocks/flerovium",
+      "required": false
+    }
+  ]
+}

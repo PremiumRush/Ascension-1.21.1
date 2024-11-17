@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "ascension:ice_lantern",
+    "ascension:blaze_lantern",
+    "ascension:titanium_chain",
+    "ascension:ferrotitanium_chain"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "c:ingots/ferrotitanium"
+    }
+  ],
+  "result": {
+    "id": "ascension:ferrotitanium_nugget",
+    "count": 9
+  }
+}

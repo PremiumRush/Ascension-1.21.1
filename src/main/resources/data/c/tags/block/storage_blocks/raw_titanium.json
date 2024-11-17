@@ -1,0 +1,9 @@
+{
+  "values": [
+    "ascension:raw_titanium_block",
+    {
+      "id": "#forge:storage_blocks/raw_titanium",
+      "required": false
+    }
+  ]
+}

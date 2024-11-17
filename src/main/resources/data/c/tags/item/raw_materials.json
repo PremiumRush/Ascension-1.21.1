@@ -1,0 +1,9 @@
+{
+  "values": [
+    "#c:raw_materials/titanium",
+    {
+      "id": "#forge:raw_materials",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "values": [
+    "#c:gems/flerovium",
+    "#c:gems/vexal",
+    "#c:gems/infused_vexal",
+    "#c:gems/ice",
+    "#c:gems/blaze",
+    {
+      "id": "#forge:gems",
+      "required": false
+    }
+  ]
+}

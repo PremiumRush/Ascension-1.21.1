@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AAA",
+    "A A",
+    "A A"
+  ],
+  "key": {
+    "A": {
+      "tag": "c:ingots/titanium"
+    }
+  },
+  "result": {
+    "id": "ascension:titanium_leggings",
+    "count": 1
+  }
+}

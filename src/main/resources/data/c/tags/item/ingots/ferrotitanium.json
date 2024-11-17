@@ -1,0 +1,9 @@
+{
+  "values": [
+    "ascension:ferrotitanium_ingot",
+    {
+      "id": "#forge:ingots/ferrotitanium",
+      "required": false
+    }
+  ]
+}

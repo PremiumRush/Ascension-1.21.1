@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "B",
+    "B",
+    "A"
+  ],
+  "key": {
+    "A": {
+      "tag": "c:rods/cold_blaze"
+    },
+    "B": {
+      "tag": "c:gems/ice"
+    }
+  },
+  "result": {
+    "id": "ascension:ice_sword",
+    "count": 1
+  }
+}

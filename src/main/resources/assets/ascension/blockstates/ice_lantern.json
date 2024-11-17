@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "hanging=false": {
+      "model": "ascension:block/ice_lantern"
+    },
+    "hanging=true": {
+      "model": "ascension:block/ice_lantern_hanging"
+    }
+  }
+}

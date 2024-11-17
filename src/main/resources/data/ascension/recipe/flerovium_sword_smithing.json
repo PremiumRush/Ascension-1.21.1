@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "tag": "c:gems/flerovium"
+  },
+  "base": {
+    "item": "minecraft:netherite_sword"
+  },
+  "result": {
+    "count": 1,
+    "id": "ascension:flerovium_sword"
+  },
+  "template": {
+    "item": "ascension:flerovium_upgrade_smithing_template"
+  }
+}

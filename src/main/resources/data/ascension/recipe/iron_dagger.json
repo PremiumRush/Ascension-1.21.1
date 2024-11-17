@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " B",
+    "A "
+  ],
+  "key": {
+    "A": {
+      "tag": "c:rods/wooden"
+    },
+    "B": {
+      "tag": "c:ingots/iron"
+    }
+  },
+  "result": {
+    "id": "ascension:iron_dagger",
+    "count": 1
+  }
+}

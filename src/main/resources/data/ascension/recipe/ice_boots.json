@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "A A",
+    "A A"
+  ],
+  "key": {
+    "A": {
+      "tag": "c:gems/ice"
+    }
+  },
+  "result": {
+    "id": "ascension:ice_boots",
+    "count": 1
+  }
+}

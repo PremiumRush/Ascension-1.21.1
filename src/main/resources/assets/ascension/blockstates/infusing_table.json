@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "facing=north,is_on=false": {"model": "minecraft:block/stone"},
+    "facing=east,is_on=false": {"model": "minecraft:block/gravel", "y": 90},
+    "facing=south,is_on=false": {"model": "minecraft:block/sand", "y":  180},
+    "facing=west,is_on=false": {"model": "minecraft:block/dirt", "y": 270},
+
+    "facing=north,is_on=true": {"model": "minecraft:block/bedrock"},
+    "facing=east,is_on=true": {"model": "minecraft:block/bedrock", "y": 90},
+    "facing=south,is_on=true": {"model": "minecraft:block/bedrock", "y":  180},
+    "facing=west,is_on=true": {"model": "minecraft:block/bedrock", "y": 270}
+  }
+}

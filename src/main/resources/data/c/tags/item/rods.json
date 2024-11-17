@@ -1,0 +1,10 @@
+{
+  "values": [
+    "#c:rods/obsidian",
+    "#c:rods/cold_blaze",
+    {
+      "id": "#forge:rods",
+      "required": false
+    }
+  ]
+}

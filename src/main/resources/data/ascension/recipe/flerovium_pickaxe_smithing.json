@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "tag": "c:gems/flerovium"
+  },
+  "base": {
+    "item": "minecraft:netherite_pickaxe"
+  },
+  "result": {
+    "count": 1,
+    "id": "ascension:flerovium_pickaxe"
+  },
+  "template": {
+    "item": "ascension:flerovium_upgrade_smithing_template"
+  }
+}

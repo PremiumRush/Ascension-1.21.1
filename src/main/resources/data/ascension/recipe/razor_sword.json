@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB",
+    "BAB",
+    "BBB"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:iron_sword"
+    },
+    "B": {
+      "item": "ascension:shark_tooth"
+    }
+  },
+  "result": {
+    "id": "ascension:razor_sword",
+    "count": 1
+  }
+}

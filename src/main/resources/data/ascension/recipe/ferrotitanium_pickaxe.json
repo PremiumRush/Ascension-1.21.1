@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB",
+    " A ",
+    " A "
+  ],
+  "key": {
+    "A": {
+      "tag": "c:rods/wooden"
+    },
+    "B": {
+      "tag": "c:ingots/ferrotitanium"
+    }
+  },
+  "result": {
+    "id": "ascension:ferrotitanium_pickaxe",
+    "count": 1
+  }
+}

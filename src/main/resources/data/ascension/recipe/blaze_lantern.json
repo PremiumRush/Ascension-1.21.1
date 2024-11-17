@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "tag": "c:gems/blaze"
+    },
+    "X": {
+      "tag": "c:nuggets/ferrotitanium"
+    }
+  },
+  "pattern": [
+    "XXX",
+    "X#X",
+    "XXX"
+  ],
+  "result": {
+    "id": "ascension:blaze_lantern",
+    "count": 4
+  },
+  "show_notification": true
+}

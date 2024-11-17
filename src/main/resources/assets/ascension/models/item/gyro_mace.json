@@ -1,0 +1,31 @@
+{
+  "loader": "neoforge:separate_transforms",
+  "gui_light": "front",
+  "base": {
+    "parent": "ascension:custom/gyro_mace_handheld",
+    "textures": {
+      "0": "ascension:block/gyro_mace_handheld"
+    }
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "ascension:item/gyro_mace_full"
+      },
+      "gui_light": "front"
+    },
+    "ground": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "ascension:item/gyro_mace_full"
+      }
+    },
+    "fixed": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "ascension:item/gyro_mace_full"
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "ascension:titanium_ore",
+    "ascension:raw_titanium_block",
+    "ascension:titanium_block",
+    "ascension:deepslate_titanium_ore"
+  ]
+}

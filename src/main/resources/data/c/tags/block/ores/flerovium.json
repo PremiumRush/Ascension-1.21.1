@@ -1,0 +1,9 @@
+{
+  "values": [
+    "ascension:deepslate_flerovium_ore",
+    {
+      "id": "#forge:ores/flerovium",
+      "required": false
+    }
+  ]
+}

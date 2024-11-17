@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "tag": "c:gems/ice"
+    },
+    "X": {
+      "tag": "c:nuggets/titanium"
+    }
+  },
+  "pattern": [
+    "XXX",
+    "X#X",
+    "XXX"
+  ],
+  "result": {
+    "id": "ascension:ice_lantern",
+    "count": 4
+  },
+  "show_notification": true
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "tag": "c:gems/flerovium"
+  },
+  "base": {
+    "item": "minecraft:netherite_axe"
+  },
+  "result": {
+    "count": 1,
+    "id": "ascension:flerovium_axe"
+  },
+  "template": {
+    "item": "ascension:flerovium_upgrade_smithing_template"
+  }
+}

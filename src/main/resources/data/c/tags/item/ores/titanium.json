@@ -1,0 +1,10 @@
+{
+  "values": [
+    "ascension:titanium_ore",
+    "ascension:deepslate_titanium_ore",
+    {
+      "id": "#forge:ores/titanium",
+      "required": false
+    }
+  ]
+}

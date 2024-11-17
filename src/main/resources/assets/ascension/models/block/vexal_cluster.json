@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "ascension:block/vexal_cluster"
+  },
+  "render_type": "cutout"
+}

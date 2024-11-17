@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AAA",
+    "BCB",
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:blue_ice"
+    },
+    "B": {
+      "tag": "c:rods/cold_blaze"
+    },
+    "C": {
+      "tag": "c:gems/diamond"
+    }
+  },
+  "result": {
+    "id": "ascension:ice_gem",
+    "count": 1
+  }
+}

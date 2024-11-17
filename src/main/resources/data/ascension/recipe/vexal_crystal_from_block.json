@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "ascension:vexal_block"
+    }
+  ],
+  "result": {
+    "id": "ascension:vexal_crystal",
+    "count": 4
+  }
+}

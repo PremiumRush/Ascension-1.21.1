@@ -1,0 +1,9 @@
+{
+  "values": [
+    "ascension:obsidian_rod",
+    {
+      "id": "#forge:rods/obsidian",
+      "required": false
+    }
+  ]
+}

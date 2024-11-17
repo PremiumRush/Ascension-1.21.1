@@ -1,0 +1,9 @@
+{
+  "values": [
+    "ascension:ice_gem",
+    {
+      "id": "#forge:gems/ice",
+      "required": false
+    }
+  ]
+}

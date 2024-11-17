@@ -1,0 +1,9 @@
+{
+  "values": [
+    "ascension:ferrotitanium_nugget",
+    {
+      "id": "#forge:nuggets/ferrotitanium",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "B",
+    "B",
+    "A"
+  ],
+  "key": {
+    "A": {
+      "tag": "c:rods/blaze"
+    },
+    "B": {
+      "tag": "c:gems/blaze"
+    }
+  },
+  "result": {
+    "id": "ascension:blaze_sword",
+    "count": 1
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "tag": "c:ingots/ferrotitanium"
+    },
+    "X": {
+      "tag": "c:nuggets/ferrotitanium"
+    }
+  },
+  "pattern": [
+    "X",
+    "#",
+    "X"
+  ],
+  "result": {
+    "id": "ascension:ferrotitanium_chain",
+    "count": 4
+  },
+  "show_notification": true
+}

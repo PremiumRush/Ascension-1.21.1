@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:blasting",
+  "group": "flerovium_shard_furnace",
+  "ingredient": {
+    "tag": "c:ores/flerovium"
+  },
+  "result": {
+    "id":"ascension:flerovium_shard"
+  },
+  "experience": 1,
+  "cookingtime": 100
+}

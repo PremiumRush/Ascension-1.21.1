@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "hanging=false": {
+      "model": "ascension:block/blaze_lantern"
+    },
+    "hanging=true": {
+      "model": "ascension:block/blaze_lantern_hanging"
+    }
+  }
+}

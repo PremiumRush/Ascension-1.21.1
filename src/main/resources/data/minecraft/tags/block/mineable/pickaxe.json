@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "ascension:titanium_ore",
+    "ascension:deepslate_titanium_ore",
+    "ascension:raw_titanium_block",
+    "ascension:titanium_block",
+    "ascension:ferrotitanium_block",
+    "ascension:vexal_block",
+    "ascension:budding_vexal_block",
+    "ascension:vexal_cluster",
+    "ascension:large_vexal_bud",
+    "ascension:medium_vexal_bud",
+    "ascension:small_vexal_bud",
+    "ascension:flerovium_block",
+    "ascension:deepslate_flerovium_ore",
+    "ascension:ice_lantern",
+    "ascension:blaze_lantern",
+    "ascension:titanium_chain",
+    "ascension:ferrotitanium_chain"
+  ]
+}

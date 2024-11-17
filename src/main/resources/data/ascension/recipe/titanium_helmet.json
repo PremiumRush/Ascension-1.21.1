@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AAA",
+    "A A"
+  ],
+  "key": {
+    "A": {
+      "tag": "c:ingots/titanium"
+    }
+  },
+  "result": {
+    "id": "ascension:titanium_helmet",
+    "count": 1
+  }
+}

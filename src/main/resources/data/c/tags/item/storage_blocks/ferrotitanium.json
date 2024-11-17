@@ -1,0 +1,9 @@
+{
+  "values": [
+    "ascension:ferrotitanium_block",
+    {
+      "id": "#forge:storage_blocks/ferrotitanium",
+      "required": false
+    }
+  ]
+}

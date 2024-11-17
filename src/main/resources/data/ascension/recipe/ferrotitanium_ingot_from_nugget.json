@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "ferrotitanium_ingot",
+  "pattern": [
+    "AAA",
+    "AAA",
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "tag": "c:nuggets/ferrotitanium"
+    }
+  },
+  "result": {
+    "id": "ascension:ferrotitanium_ingot",
+    "count": 1
+  }
+}

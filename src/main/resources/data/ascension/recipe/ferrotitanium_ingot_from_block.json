@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "ferrotitanium_ingot",
+  "ingredients": [
+    {
+      "tag": "c:storage_blocks/ferrotitanium"
+    }
+  ],
+  "result": {
+    "id": "ascension:ferrotitanium_ingot",
+    "count": 9
+  }
+}

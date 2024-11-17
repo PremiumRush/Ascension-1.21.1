@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AAA",
+    "BCB",
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:snow_block"
+    },
+    "B": {
+      "item": "minecraft:powder_snow_bucket"
+    },
+    "C": {
+      "tag": "c:rods/blaze"
+    }
+  },
+  "result": {
+    "id": "ascension:cold_blaze_rod",
+    "count": 1
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "ascension:titanium_ingot",
+    "ascension:ferrotitanium_ingot",
+    "ascension:flerovium_crystal",
+    "ascension:vexal_crystal",
+    "ascension:infused_vexal_crystal"
+  ]
+}

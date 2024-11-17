@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:scattered_ore",
+  "config": {
+    "size": 2,
+    "discard_chance_on_air_exposure": 1.0,
+    "targets": [
+      {
+        "target": {
+          "predicate_type": "minecraft:tag_match",
+          "tag": "minecraft:deepslate_ore_replaceables"
+        },
+        "state": {
+          "Name": "ascension:deepslate_flerovium_ore"
+        }
+      }
+    ]
+  }
+}

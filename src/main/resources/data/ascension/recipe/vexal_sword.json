@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "B",
+    "B",
+    "A"
+  ],
+  "key": {
+    "A": {
+      "tag": "c:rods/obsidian"
+    },
+    "B": {
+      "tag": "c:gems/vexal"
+    }
+  },
+  "result": {
+    "id": "ascension:vexal_sword",
+    "count": 1
+  }
+}

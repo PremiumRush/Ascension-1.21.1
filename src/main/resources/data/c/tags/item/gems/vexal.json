@@ -1,0 +1,9 @@
+{
+  "values": [
+    "ascension:vexal_crystal",
+    {
+      "id": "#forge:gems/vexal",
+      "required": false
+    }
+  ]
+}

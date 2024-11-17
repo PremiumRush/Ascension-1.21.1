@@ -1,0 +1,9 @@
+{
+  "values": [
+    "ascension:flerovium_crystal",
+    {
+      "id": "#forge:gems/flerovium",
+      "required": false
+    }
+  ]
+}

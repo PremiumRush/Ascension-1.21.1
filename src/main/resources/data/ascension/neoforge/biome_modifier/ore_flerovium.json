@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "features": "ascension:ore_flerovium",
+  "biomes": "#minecraft:is_overworld",
+  "step": "underground_ores"
+}

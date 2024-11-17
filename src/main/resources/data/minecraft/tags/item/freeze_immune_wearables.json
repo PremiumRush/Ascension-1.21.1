@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "ascension:ice_helmet",
+    "ascension:ice_chestplate",
+    "ascension:ice_leggings",
+    "ascension:ice_boots"
+  ]
+}

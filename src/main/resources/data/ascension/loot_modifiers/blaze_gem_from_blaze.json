@@ -1,0 +1,27 @@
+{
+  "type": "ascension:add_item",
+  "conditions": [
+    {
+      "condition": "neoforge:loot_table_id",
+      "loot_table_id": "minecraft:entities/blaze"
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "attacker",
+      "predicate": {
+        "equipment": {
+          "mainhand": {
+            "items": "ascension:infused_vexal_sword"
+          }
+        }
+      }
+    },
+    {
+      "chance": 0.5,
+      "condition": "minecraft:random_chance"
+    }
+  ],
+  "field1": "blaze_gem_from_blaze",
+  "field2": 1,
+  "field3": "ascension:blaze_gem"
+}

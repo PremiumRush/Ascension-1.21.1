@@ -1,0 +1,9 @@
+{
+  "values": [
+    "ascension:raw_titanium",
+    {
+      "id": "#forge:raw_materials/titanium",
+      "required": false
+    }
+  ]
+}

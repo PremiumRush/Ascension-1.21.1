@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "ascension:block/medium_vexal_bud",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "ascension:block/medium_vexal_bud",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "ascension:block/medium_vexal_bud",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "ascension:block/medium_vexal_bud",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "ascension:block/medium_vexal_bud"
+    },
+    "facing=west": {
+      "model": "ascension:block/medium_vexal_bud",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

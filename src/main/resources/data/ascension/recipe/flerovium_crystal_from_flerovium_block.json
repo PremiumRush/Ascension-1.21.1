@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "flerovium_crystal",
+  "ingredients": [
+    {
+      "tag": "c:storage_blocks/flerovium"
+    }
+  ],
+  "result": {
+    "id": "ascension:flerovium_crystal",
+    "count": 9
+  }
+}

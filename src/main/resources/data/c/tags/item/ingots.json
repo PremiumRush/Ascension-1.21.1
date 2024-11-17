@@ -1,0 +1,10 @@
+{
+  "values": [
+    "#c:ingots/titanium",
+    "#c:ingots/ferrotitanium",
+    {
+      "id": "#forge:ingots",
+      "required": false
+    }
+  ]
+}

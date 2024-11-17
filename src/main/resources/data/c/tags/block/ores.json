@@ -1,0 +1,10 @@
+{
+  "values": [
+    "#c:ores/titanium",
+    "#c:ores/flerovium",
+    {
+      "id": "#forge:ores",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "values": [
+    "ascension:cold_blaze_rod",
+    {
+      "id": "#forge:rods/cold_blaze",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "c:raw_materials/iron"
+    },
+    {
+      "tag": "c:raw_materials/titanium"
+    },
+    {
+      "tag": "c:raw_materials/titanium"
+    }
+  ],
+  "result": {
+    "id": "ascension:ferrotitanium_blend",
+    "count": 3
+  }
+}

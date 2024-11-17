@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:blasting",
+  "group": "ferrotitanium_ingot",
+  "ingredient": {
+    "item": "ascension:ferrotitanium_blend"
+  },
+  "result": {
+    "id": "ascension:ferrotitanium_ingot"
+  },
+  "experience": 1.3,
+  "cookingtime": 200
+}

@@ -1,0 +1,9 @@
+{
+  "values": [
+    "ascension:titanium_ingot",
+    {
+      "id": "#forge:ingots/titanium",
+      "required": false
+    }
+  ]
+}

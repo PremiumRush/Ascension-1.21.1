@@ -1,0 +1,9 @@
+{
+  "values": [
+    "ascension:blaze_gem",
+    {
+      "id": "#forge:gems/blaze",
+      "required": false
+    }
+  ]
+}
