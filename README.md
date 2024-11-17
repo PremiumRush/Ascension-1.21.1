@@ -12,6 +12,7 @@ Blocks:
 Entities:
 - Ice Blaze Mob (Spawns in Ice Spikes biome)
 - Shark (Neutral but powerful Mob that spawns in deep oceans)
+- Hostile Golem?
 - Titanium / Ferrotitanium Golems (Similar or Opposite functionality of Minecraft Golems)
 
 Structures:
