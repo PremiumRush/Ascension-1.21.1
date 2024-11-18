@@ -15,13 +15,6 @@ Entities:
 - Hostile Golem?
 - Titanium / Ferrotitanium Golems (Similar or Opposite functionality of Minecraft Golems)
 
-Structures:
-- Watchtower
-- Abandoned Tower
-- Small Mob Dungeons
-- Abandoned Houses
-
-
 
 ## Ideas - (Unsure or Distant Additions to the Game)
 Items:
@@ -38,11 +31,12 @@ Structures:
 - Sphinx
 - +More?
 
-### Underworld Dimension:
+### Forgotton Lands Dimension:
 General:
-- Vast Dimension "above" the Nether
-- Less Lava and allows Water
+- Vast and Dry Dimension
+- Occasional Lava Lakes
 - Mostly foggy dimension
+- Perhaps "pathways" through the dimension as carvers?
 
 Items:
 - Enchanted Book for a "Soul Speed" like block in the new Dimension
