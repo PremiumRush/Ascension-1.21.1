@@ -19,7 +19,7 @@ Entities:
 
 ## Ideas - (Unsure or Distant Additions to the Game)
 Items:
-- Artifacts (Drop from various bosses, used to open Portal to Underworld Dimension)
+- Artifacts (Drop from various bosses, used to open Portal to New Dimension)
 
 Blocks:
 - Artifact Pedestal
