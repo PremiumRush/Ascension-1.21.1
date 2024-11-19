@@ -1,25 +1,53 @@
+# Ascension 1.21.1 NeoForge
+This is a beginners' attempt on creating a mod for NeoForge 1.21.1.
 
-Installation information
-=======
+I used the old 1.7.10 mod "Ascension" as inspiration and made my own mod out of it.
 
-This template repository can be directly cloned to get you started with a new
-mod. Simply create a new repository cloned from this one, by following the
-instructions provided by [GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
+Note: I know NOTHING about coding and java, this project may never work at all
 
-Once you have your clone, simply open the repository in the IDE of your choice. The usual recommendation for an IDE is either IntelliJ IDEA or Eclipse.
+## Roadmap - (Don't mind this, these are just some notes)
+Blocks:
+- Infusion Table for Flerovium Related Items (Template and Infused Crystal)
 
-If at any point you are missing libraries in your IDE, or you've run into problems you can
-run `gradlew --refresh-dependencies` to refresh the local cache. `gradlew clean` to reset everything 
-{this does not affect your code} and then start the process again.
+Entities:
+- Ice Blaze Mob (Spawns in Ice Spikes biome)
+- Shark (Neutral but powerful Mob that spawns in deep oceans)
+- Mummies & Valkyries/Barbarians?
+- Hostile Golem?
+- Titanium / Ferrotitanium Golems (Similar or Opposite functionality of Minecraft Golems)
 
-Mapping Names:
-============
-By default, the MDK is configured to use the official mapping names from Mojang for methods and fields 
-in the Minecraft codebase. These names are covered by a specific license. All modders should be aware of this
-license. For the latest license text, refer to the mapping file itself, or the reference copy here:
-https://github.com/NeoForged/NeoForm/blob/main/Mojang.md
 
-Additional Resources: 
-==========
-Community Documentation: https://docs.neoforged.net/  
-NeoForged Discord: https://discord.neoforged.net/
+## Ideas - (Unsure or Distant Additions to the Game)
+Items:
+- Artifacts (Drop from various bosses, used to open Portal to New Dimension)
+
+Blocks:
+- Artifact Pedestal
+ 
+Entities:
+- Pharaoh Boss
+- +More?
+
+Structures:
+- Sphinx
+- +More?
+
+### Forgotton Lands Dimension:
+General:
+- Vast and Dry Dimension
+- Occasional Lava Lakes
+- Mostly foggy dimension
+- Perhaps "pathways" through the dimension as carvers?
+
+Items:
+- Enchanted Book for a "Soul Speed" like block in the new Dimension
+
+Blocks:
+- Generally completely new Block-Palette in this dimension
+- Coal, Redstone, Lapis, Gold and Diamond remain, Iron does not exist (More Titanium)
+- New Upgrade to Diamond Gear (Like Netherite) from this dimension (Less Powerful than Flerovium though)
+
+Structures:
+- Rare, large castle structure with a "final" Boss
+- Travelers Camps
+- Ruins of a former Civilization
