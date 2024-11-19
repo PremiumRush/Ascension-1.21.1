@@ -1,0 +1,30 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 1345729635,
+    "separation": 23,
+    "spacing": 30
+  },
+  "structures": [
+    {
+      "structure": "ascension:watchtower",
+      "weight": 1
+    },
+    {
+      "structure": "ascension:small_abandoned_house",
+      "weight": 1
+    },
+    {
+      "structure": "ascension:round_mob_dungeon",
+      "weight": 1
+    },
+    {
+      "structure": "ascension:medium_abandoned_house",
+      "weight": 1
+    },
+    {
+      "structure": "ascension:abandoned_tower",
+      "weight": 1
+    }
+  ]
+}

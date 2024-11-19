@@ -17,7 +17,7 @@ public class Ascension {
         ParticleInit.PARTICLE_TYPES.register(bus);
         ArmorMaterialInit.ARMOR_MATERIALS.register(bus);
         MobEffectInit.MOB_EFFECTS.register(bus);
-
+        EntityInit.ENTITY_TYPES.register(bus);
         ModLootModifiers.GLOBAL_LOOT_MODIFIER_SERIALIZERS.register(bus);
     }
 }

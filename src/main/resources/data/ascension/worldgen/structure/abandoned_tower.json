@@ -1,0 +1,15 @@
+{
+  "biomes": "#ascension:valid_round_mob_dungeon",
+  "spawn_overrides": {},
+  "type": "minecraft:jigsaw",
+  "start_pool": "ascension:abandoned_tower/abandoned_tower",
+  "size": 7,
+  "step": "surface_structures",
+  "start_height": {
+    "absolute": 0
+  },
+  "project_start_to_heightmap": "WORLD_SURFACE_WG",
+  "max_distance_from_center": 110,
+  "terrain_adaptation": "beard_thin",
+  "use_expansion_hack": false
+}

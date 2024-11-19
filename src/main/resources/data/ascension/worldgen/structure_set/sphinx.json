@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 43122329,
+    "separation": 45,
+    "spacing": 60
+  },
+  "structures": [
+    {
+      "structure": "ascension:sphinx",
+      "weight": 1
+    }
+  ]
+}

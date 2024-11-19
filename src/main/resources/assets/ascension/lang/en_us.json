@@ -3,11 +3,12 @@
 
   "tooltip.ascension.titanium_item.tooltip": "\u00A77A slightly stronger alternative to Iron",
   "tooltip.ascension.ferrotitanium_item.tooltip": "\u00A77A more durable but weaker alternative to Diamond",
+  "tooltip.ascension.ferrotitanium_armor.tooltip": "\u00A77Full Set Bonus: \u00A7aRadiation Resistance",
   "tooltip.ascension.flerovium_sworditem.tooltip": "\u00A77The strongest craftable Sword - Irradiates Enemies",
   "tooltip.ascension.flerovium_daggeritem.tooltip": "\u00A77The strongest craftable Dagger - Irradiates Enemies",
   "tooltip.ascension.flerovium_tool.tooltip": "\u00A77The strongest craftable Tools",
   "tooltip.ascension.flerovium_armor1.tooltip": "\u00A77The strongest craftable Armor",
-  "tooltip.ascension.flerovium_armor2.tooltip": "\u00A77Full Set Bonus: \u00A7aPoison Resistance",
+  "tooltip.ascension.flerovium_armor2.tooltip": "\u00A77Full Set Bonus: \u00A7aPoison and Radiation Resistance",
   "tooltip.ascension.inactive_upgrade_item.tooltip": "\u00A77This Template needs to be activated somehow...",
   "tooltip.ascension.flerovium_upgrade_applies_to.tooltip": "\u00A74Netherite Equipment",
   "tooltip.ascension.flerovium_upgrade_ingredients.tooltip": "\u00A75Flerovium Crystal",
@@ -28,6 +29,8 @@
   "tooltip.ascension.knockback_item.tooltip": "\u00A77Deals more Knockback than other Weapons",
   "tooltip.ascension.shadow_dagger.tooltip": "\u00A77On Use, performs a Dodge in the movement Direction when on Ground, dodges downwards when Airborne. Both at the expense of hunger",
   "tooltip.ascension.shadow_dagger2.tooltip": "\u00A77Ability: \u00A7fInvisibility",
+  "tooltip.ascension.venom_dagger.tooltip": "\u00A77Inflicts a highly potent \u00A72Poison\u00A77 on the Target",
+  "tooltip.ascension.venom_dagger2.tooltip": "\u00A72Poison\u00A77 Ability has a 5s Cooldown",
 
   "death.attack.bleeding": "%1$s bled out",
   "death.attack.radiation": "%1$s died from radiation poisoning",
@@ -108,6 +111,7 @@
   "item.ascension.razor_sword": "Razor Sword",
   "item.ascension.gyro_mace": "Gyro Mace",
   "item.ascension.shadow_dagger": "Shadow Dagger",
+  "item.ascension.venom_dagger": "Venom Dagger",
 
   "item.ascension.titanium_helmet": "Titanium Helmet",
   "item.ascension.titanium_chestplate": "Titanium Chestplate",

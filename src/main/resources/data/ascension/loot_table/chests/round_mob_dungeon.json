@@ -1,0 +1,409 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": {
+        "min": 2,
+        "max": 3
+      },
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:book",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:enchant_randomly",
+              "options": "#minecraft:on_random_loot"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "ascension:golem_gyro",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "ascension:ice_gem",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "ascension:blaze_gem",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "ascension:cold_blaze_rod",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "ascension:shark_tooth",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_apple",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:gold_ingot",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 5
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:emerald",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:name_tag",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_potion",
+              "id": "minecraft:strong_healing"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:saddle",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:blade_pottery_sherd",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:skeleton_skull",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_horse_armor",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "rolls": 4,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "ascension:titanium_ingot",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "ascension:ferrotitanium_ingot",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "ascension:vexal_crystal",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:melon_seeds",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 4
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:cocoa_beans",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 4
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:wind_charge",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:cookie",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 8
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bread",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 5
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:cobweb",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bone",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 6
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:string",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 6
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:gunpowder",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 5
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:rotten_flesh",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 4
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:spider_eye",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 24
+        },
+        {
+          "type": "minecraft:item",
+          "name": "ascension:titanium_helmet",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "ascension:titanium_chestplate",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "ascension:titanium_leggings",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "ascension:titanium_boots",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "ascension:ferrotitanium_helmet",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "ascension:ferrotitanium_chestplate",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "ascension:ferrotitanium_leggings",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "ascension:ferrotitanium_boots",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "ascension:razor_sword",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "ascension:titanium_dagger",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "ascension:iron_dagger",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "ascension:diamond_dagger",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "ascension:ferrotitanium_sword",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "ascension:winged_blade",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "ascension:vexal_sword",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "ascension:titanium_axe",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "ascension:blaze_sword",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "ascension:ice_sword",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

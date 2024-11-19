@@ -1,0 +1,10 @@
+{
+  "values": [
+    "ascension:watchtower",
+    "ascension:abandoned_tower",
+    "ascension:medium_abandoned_house",
+    "ascension:small_abandoned_house",
+    "ascension:sphinx",
+    "ascension:round_mob_dungeon"
+  ]
+}

@@ -223,6 +223,11 @@ public class ItemInit {
                     TierInit.ShadowTier,
                     new Item.Properties().rarity(Rarity.EPIC).attributes(ShadowDaggerItem.createAttributes(TierInit.ShadowTier, 1, -1.0f))
             )));
+    public static final Supplier<VenomDaggerItem> VENOM_DAGGER = addToTab(ITEMS.register("venom_dagger",
+            () -> new VenomDaggerItem(
+                    TierInit.VenomTier,
+                    new Item.Properties().attributes(VenomDaggerItem.createAttributes(TierInit.VenomTier, 1.0F, -1.0F))
+            )));
 
 // ## Armors (Helmet - Chestplate - Leggings - Boots)
 // Titanium Armor

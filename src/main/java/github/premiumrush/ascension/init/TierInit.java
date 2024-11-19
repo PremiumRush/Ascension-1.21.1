@@ -1,7 +1,6 @@
 package github.premiumrush.ascension.init;
 
 import net.minecraft.tags.BlockTags;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.neoforged.neoforge.common.SimpleTier;
@@ -53,7 +52,7 @@ public class TierInit {
             5.0F,
             1.0F,
             8,
-            () -> Ingredient.of(Items.AIR)
+            () -> Ingredient.EMPTY
     );
     public static final Tier RazorTier = new SimpleTier(
             BlockTags.INCORRECT_FOR_IRON_TOOL,
@@ -61,7 +60,7 @@ public class TierInit {
             8.0F,
             3.0F,
             10,
-            () -> Ingredient.of(Items.AIR)
+            () -> Ingredient.EMPTY
     );
     public static final Tier FleroviumTier = new SimpleTier(
             BlockTags.INCORRECT_FOR_NETHERITE_TOOL,
@@ -93,7 +92,7 @@ public class TierInit {
             6.5F,
             3F,
             12,
-            () -> Ingredient.of(Items.AIR)
+            () -> Ingredient.EMPTY
     );
     public static final Tier ShadowTier = new SimpleTier(
             BlockTags.INCORRECT_FOR_DIAMOND_TOOL,
@@ -101,6 +100,14 @@ public class TierInit {
             7.5F,
             3F,
             15,
-            () -> Ingredient.of(Items.AIR)
+            () -> Ingredient.EMPTY
+    );
+    public static final Tier VenomTier = new SimpleTier(
+            BlockTags.INCORRECT_FOR_DIAMOND_TOOL,
+            256,
+            7.5F,
+            2.5F,
+            13,
+            () -> Ingredient.EMPTY
     );
 }

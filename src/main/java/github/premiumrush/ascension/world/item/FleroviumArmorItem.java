@@ -1,6 +1,7 @@
 package github.premiumrush.ascension.world.item;
 
 import github.premiumrush.ascension.init.ItemInit;
+import github.premiumrush.ascension.init.MobEffectInit;
 import net.minecraft.core.Holder;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.effect.MobEffects;
@@ -31,6 +32,7 @@ public class FleroviumArmorItem extends ArmorItem {
     public void inventoryTick(@NotNull ItemStack stack, Level level, @NotNull Entity entity, int slotId, boolean isSelected) {
         if (!level.isClientSide() && entity instanceof Player player && hasFleroviumArmorSetOn(player)) {
             player.removeEffect(MobEffects.POISON);
+            player.removeEffect(MobEffectInit.RADIATION);
         }
     }
 
