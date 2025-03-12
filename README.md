@@ -10,7 +10,7 @@ Blocks:
 
 Entities:
 - Mummies & Valkyries/Barbarians?
-
+- Ghost & Banshee?
 
 ## Ideas - (Unsure or Distant Additions to the Game)
 Items:
