@@ -1,0 +1,14 @@
+{
+  "type": "ascension:infusion",
+  "base": {
+    "item": "minecraft:poisonous_potato"
+  },
+  "catalyst": {
+    "item": "ascension:flerovium_shard"
+  },
+  "ore_processing": false,
+  "result": {
+    "count": 8,
+    "id": "ascension:curative_potato"
+  }
+}

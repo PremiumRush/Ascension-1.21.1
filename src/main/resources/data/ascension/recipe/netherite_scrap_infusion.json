@@ -1,0 +1,14 @@
+{
+  "type": "ascension:infusion",
+  "base": {
+    "item": "minecraft:ancient_debris"
+  },
+  "catalyst": {
+    "item": "minecraft:gold_block"
+  },
+  "ore_processing": true,
+  "result": {
+    "count": 2,
+    "id": "minecraft:netherite_scrap"
+  }
+}

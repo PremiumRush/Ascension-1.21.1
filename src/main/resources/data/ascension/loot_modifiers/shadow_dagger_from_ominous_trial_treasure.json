@@ -1,0 +1,16 @@
+{
+  "type": "ascension:add_item",
+  "conditions": [
+    {
+      "condition": "neoforge:loot_table_id",
+      "loot_table_id": "minecraft:chests/trial_chambers/reward_ominous_rare"
+    },
+    {
+      "chance": 0.2,
+      "condition": "minecraft:random_chance"
+    }
+  ],
+  "field1": "shadow_dagger_from_ominous_trial_treasure",
+  "field2": 1,
+  "field3": "ascension:shadow_dagger"
+}

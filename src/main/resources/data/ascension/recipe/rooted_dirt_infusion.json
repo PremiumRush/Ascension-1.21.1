@@ -1,0 +1,14 @@
+{
+  "type": "ascension:infusion",
+  "base": {
+    "item": "minecraft:dirt"
+  },
+  "catalyst": {
+    "item": "minecraft:wheat_seeds"
+  },
+  "ore_processing": false,
+  "result": {
+    "count": 1,
+    "id": "minecraft:rooted_dirt"
+  }
+}

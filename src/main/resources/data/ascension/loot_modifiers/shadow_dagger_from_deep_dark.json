@@ -1,0 +1,16 @@
+{
+  "type": "ascension:add_item",
+  "conditions": [
+    {
+      "condition": "neoforge:loot_table_id",
+      "loot_table_id": "minecraft:chests/ancient_city"
+    },
+    {
+      "chance": 0.3,
+      "condition": "minecraft:random_chance"
+    }
+  ],
+  "field1": "shadow_dagger_from_deep_dark",
+  "field2": 1,
+  "field3": "ascension:shadow_dagger"
+}

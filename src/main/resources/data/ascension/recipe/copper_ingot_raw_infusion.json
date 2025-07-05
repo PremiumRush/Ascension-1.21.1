@@ -1,0 +1,12 @@
+{
+  "type": "ascension:infusion",
+  "base": [],
+  "catalyst": {
+    "item": "minecraft:raw_copper"
+  },
+  "ore_processing": true,
+  "result": {
+    "count": 2,
+    "id": "minecraft:copper_ingot"
+  }
+}

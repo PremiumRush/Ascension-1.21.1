@@ -1,0 +1,12 @@
+{
+  "type": "ascension:infusion",
+  "base": [],
+  "catalyst": {
+    "item": "ascension:deepslate_titanium_ore"
+  },
+  "ore_processing": true,
+  "result": {
+    "count": 4,
+    "id": "ascension:titanium_ingot"
+  }
+}

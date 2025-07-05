@@ -17,6 +17,18 @@
     "ascension:ice_lantern",
     "ascension:blaze_lantern",
     "ascension:titanium_chain",
-    "ascension:ferrotitanium_chain"
+    "ascension:ferrotitanium_chain",
+    "ascension:ice_stairs",
+    "ascension:ice_slab",
+    "ascension:ice_wall",
+    "ascension:packed_ice_stairs",
+    "ascension:packed_ice_slab",
+    "ascension:packed_ice_wall",
+    "ascension:blue_ice_stairs",
+    "ascension:blue_ice_slab",
+    "ascension:blue_ice_wall",
+    "ascension:solid_ice",
+    "ascension:infusing_table",
+    "ascension:enchantment_refiner"
   ]
 }

@@ -1,0 +1,12 @@
+{
+  "type": "neoforge:add_spawns",
+  "structures": "minecraft:fortress",
+  "spawners": [
+    {
+      "type": "ascension:ember_golem",
+      "maxCount": 3,
+      "minCount": 2,
+      "weight": 2
+    }
+  ]
+}

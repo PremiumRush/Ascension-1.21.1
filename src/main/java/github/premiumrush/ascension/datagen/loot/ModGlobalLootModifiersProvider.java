@@ -1,8 +1,8 @@
 package github.premiumrush.ascension.datagen.loot;
 
 import github.premiumrush.ascension.Ascension;
-import github.premiumrush.ascension.init.ItemInit;
-import github.premiumrush.ascension.loot.AddItem;
+import github.premiumrush.ascension.common.world.loot.AddItem;
+import github.premiumrush.ascension.common.init.ItemInit;
 import net.minecraft.advancements.critereon.EntityEquipmentPredicate;
 import net.minecraft.advancements.critereon.EntityPredicate;
 import net.minecraft.advancements.critereon.ItemPredicate;
@@ -10,7 +10,9 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.storage.loot.LootContext;
-import net.minecraft.world.level.storage.loot.predicates.*;
+import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
+import net.minecraft.world.level.storage.loot.predicates.LootItemEntityPropertyCondition;
+import net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceCondition;
 import net.neoforged.neoforge.common.data.GlobalLootModifierProvider;
 import net.neoforged.neoforge.common.loot.LootTableIdCondition;
 

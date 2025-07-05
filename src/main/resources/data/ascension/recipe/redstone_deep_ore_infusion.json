@@ -1,0 +1,12 @@
+{
+  "type": "ascension:infusion",
+  "base": [],
+  "catalyst": {
+    "item": "minecraft:deepslate_redstone_ore"
+  },
+  "ore_processing": true,
+  "result": {
+    "count": 16,
+    "id": "minecraft:redstone"
+  }
+}

@@ -1,7 +1,11 @@
 {
   "entries": [
     "ascension:blaze_gem_from_blaze",
-    "ascension:dormant_template_from_end_city"
+    "ascension:dormant_template_from_end_city",
+    "ascension:winged_blade_from_end_city",
+    "ascension:venom_dagger_from_trial_treasure",
+    "ascension:shadow_dagger_from_deep_dark",
+    "ascension:shadow_dagger_from_ominous_trial_treasure"
   ],
   "replace": false
 }

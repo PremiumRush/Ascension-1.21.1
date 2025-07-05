@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "lit=false": {"model": "ascension:block/netherite_item_pedestal"},
+    "lit=true": {"model": "ascension:block/netherite_item_pedestal_lit"}
+  }
+}

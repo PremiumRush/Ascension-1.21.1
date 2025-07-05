@@ -1,0 +1,12 @@
+{
+  "type": "ascension:infusion",
+  "base": [],
+  "catalyst": {
+    "item": "minecraft:deepslate_gold_ore"
+  },
+  "ore_processing": true,
+  "result": {
+    "count": 4,
+    "id": "minecraft:gold_ingot"
+  }
+}

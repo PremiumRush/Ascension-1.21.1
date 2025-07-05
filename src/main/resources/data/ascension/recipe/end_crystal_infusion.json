@@ -1,0 +1,14 @@
+{
+  "type": "ascension:infusion",
+  "base": {
+    "item": "minecraft:ender_eye"
+  },
+  "catalyst": {
+    "item": "minecraft:ghast_tear"
+  },
+  "ore_processing": false,
+  "result": {
+    "count": 1,
+    "id": "minecraft:end_crystal"
+  }
+}

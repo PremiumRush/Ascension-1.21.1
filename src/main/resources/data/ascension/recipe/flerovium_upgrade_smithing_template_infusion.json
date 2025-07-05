@@ -1,0 +1,14 @@
+{
+  "type": "ascension:infusion",
+  "base": {
+    "item": "ascension:flerovium_upgrade_smithing_template_inactive"
+  },
+  "catalyst": {
+    "item": "ascension:flerovium_crystal"
+  },
+  "ore_processing": false,
+  "result": {
+    "count": 1,
+    "id": "ascension:flerovium_upgrade_smithing_template"
+  }
+}

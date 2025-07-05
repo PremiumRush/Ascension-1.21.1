@@ -1,0 +1,14 @@
+{
+  "type": "ascension:infusion",
+  "base": {
+    "item": "minecraft:dirt"
+  },
+  "catalyst": {
+    "item": "minecraft:brown_mushroom"
+  },
+  "ore_processing": false,
+  "result": {
+    "count": 2,
+    "id": "minecraft:mycelium"
+  }
+}

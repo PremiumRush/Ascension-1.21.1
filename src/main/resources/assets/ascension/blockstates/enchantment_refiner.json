@@ -1,0 +1,23 @@
+{
+  "variants": {
+    "facing=north,fuel_stage=0": {"model": "ascension:block/enchantment_refiner_stage0", "y":  180},
+    "facing=east,fuel_stage=0": {"model": "ascension:block/enchantment_refiner_stage0", "y": 270},
+    "facing=south,fuel_stage=0": {"model": "ascension:block/enchantment_refiner_stage0"},
+    "facing=west,fuel_stage=0": {"model": "ascension:block/enchantment_refiner_stage0", "y": 90},
+
+    "facing=north,fuel_stage=1": {"model": "ascension:block/enchantment_refiner_stage1", "y":  180},
+    "facing=east,fuel_stage=1": {"model": "ascension:block/enchantment_refiner_stage1", "y": 270},
+    "facing=south,fuel_stage=1": {"model": "ascension:block/enchantment_refiner_stage1"},
+    "facing=west,fuel_stage=1": {"model": "ascension:block/enchantment_refiner_stage1", "y": 90},
+
+    "facing=north,fuel_stage=2": {"model": "ascension:block/enchantment_refiner_stage2", "y":  180},
+    "facing=east,fuel_stage=2": {"model": "ascension:block/enchantment_refiner_stage2", "y": 270},
+    "facing=south,fuel_stage=2": {"model": "ascension:block/enchantment_refiner_stage2"},
+    "facing=west,fuel_stage=2": {"model": "ascension:block/enchantment_refiner_stage2", "y": 90},
+
+    "facing=north,fuel_stage=3": {"model": "ascension:block/enchantment_refiner_full", "y":  180},
+    "facing=east,fuel_stage=3": {"model": "ascension:block/enchantment_refiner_full", "y": 270},
+    "facing=south,fuel_stage=3": {"model": "ascension:block/enchantment_refiner_full"},
+    "facing=west,fuel_stage=3": {"model": "ascension:block/enchantment_refiner_full", "y": 90}
+  }
+}

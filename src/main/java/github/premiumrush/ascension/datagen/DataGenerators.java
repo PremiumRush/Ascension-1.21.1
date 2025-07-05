@@ -2,6 +2,7 @@ package github.premiumrush.ascension.datagen;
 
 import github.premiumrush.ascension.Ascension;
 import github.premiumrush.ascension.datagen.loot.ModGlobalLootModifiersProvider;
+import github.premiumrush.ascension.datagen.recipe.ModRecipeProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
@@ -22,5 +23,6 @@ public class DataGenerators {
         CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
 
         generator.addProvider(event.includeServer(), new ModGlobalLootModifiersProvider(packOutput, lookupProvider));
+        generator.addProvider(event.includeServer(), new ModRecipeProvider(packOutput, lookupProvider));
     }
 }

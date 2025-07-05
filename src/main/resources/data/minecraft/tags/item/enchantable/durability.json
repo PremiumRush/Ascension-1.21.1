@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "ascension:gyro_mace"
+    "ascension:gyro_mace",
+    "ascension:shadow_staff"
   ]
 }

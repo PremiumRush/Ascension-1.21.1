@@ -1,0 +1,14 @@
+{
+  "type": "ascension:infusion",
+  "base": {
+    "item": "minecraft:ink_sac"
+  },
+  "catalyst": {
+    "item": "minecraft:glowstone_dust"
+  },
+  "ore_processing": false,
+  "result": {
+    "count": 1,
+    "id": "minecraft:glow_ink_sac"
+  }
+}

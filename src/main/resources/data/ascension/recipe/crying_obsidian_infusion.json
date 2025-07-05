@@ -1,0 +1,14 @@
+{
+  "type": "ascension:infusion",
+  "base": {
+    "item": "minecraft:obsidian"
+  },
+  "catalyst": {
+    "item": "minecraft:amethyst_shard"
+  },
+  "ore_processing": false,
+  "result": {
+    "count": 1,
+    "id": "minecraft:crying_obsidian"
+  }
+}

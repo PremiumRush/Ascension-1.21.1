@@ -15,6 +15,10 @@
     "ascension:ice_helmet",
     "ascension:ice_chestplate",
     "ascension:ice_leggings",
-    "ascension:ice_boots"
+    "ascension:ice_boots",
+    "ascension:golem_helmet",
+    "ascension:golem_chestplate",
+    "ascension:golem_leggings",
+    "ascension:golem_boots"
   ]
 }

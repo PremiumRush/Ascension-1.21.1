@@ -1,0 +1,14 @@
+{
+  "type": "ascension:infusion",
+  "base": {
+    "item": "minecraft:golden_apple"
+  },
+  "catalyst": {
+    "item": "ascension:flerovium_shard"
+  },
+  "ore_processing": false,
+  "result": {
+    "count": 1,
+    "id": "minecraft:enchanted_golden_apple"
+  }
+}

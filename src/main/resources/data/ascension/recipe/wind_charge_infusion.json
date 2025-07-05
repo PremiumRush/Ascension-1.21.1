@@ -1,0 +1,12 @@
+{
+  "type": "ascension:infusion",
+  "base": [],
+  "catalyst": {
+    "item": "minecraft:breeze_rod"
+  },
+  "ore_processing": false,
+  "result": {
+    "count": 8,
+    "id": "minecraft:wind_charge"
+  }
+}

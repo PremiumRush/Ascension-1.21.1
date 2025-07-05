@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "ascension:ice_wall",
+    "ascension:packed_ice_wall",
+    "ascension:blue_ice_wall"
+  ]
+}

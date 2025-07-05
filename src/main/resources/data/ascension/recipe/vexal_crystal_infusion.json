@@ -1,0 +1,12 @@
+{
+  "type": "ascension:infusion",
+  "base": [],
+  "catalyst": {
+    "item": "ascension:vexal_block"
+  },
+  "ore_processing": true,
+  "result": {
+    "count": 4,
+    "id": "ascension:vexal_crystal"
+  }
+}

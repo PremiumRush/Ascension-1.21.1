@@ -1,0 +1,14 @@
+{
+  "type": "ascension:infusion",
+  "base": {
+    "item": "minecraft:mace"
+  },
+  "catalyst": {
+    "item": "ascension:golem_gyro"
+  },
+  "ore_processing": false,
+  "result": {
+    "count": 1,
+    "id": "minecraft:mace"
+  }
+}

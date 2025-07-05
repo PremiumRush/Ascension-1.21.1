@@ -1,0 +1,16 @@
+{
+  "type": "ascension:add_item",
+  "conditions": [
+    {
+      "condition": "neoforge:loot_table_id",
+      "loot_table_id": "minecraft:chests/end_city_treasure"
+    },
+    {
+      "chance": 0.25,
+      "condition": "minecraft:random_chance"
+    }
+  ],
+  "field1": "winged_blade_from_end_city",
+  "field2": 1,
+  "field3": "ascension:winged_blade"
+}

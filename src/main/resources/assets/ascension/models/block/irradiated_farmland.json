@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/template_farmland",
+  "textures": {
+    "dirt": "ascension:block/irradiated_dirt",
+    "top": "ascension:block/irradiated_farmland"
+  }
+}

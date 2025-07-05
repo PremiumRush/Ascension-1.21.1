@@ -1,0 +1,16 @@
+{
+  "type": "ascension:add_item",
+  "conditions": [
+    {
+      "condition": "neoforge:loot_table_id",
+      "loot_table_id": "minecraft:chests/trial_chambers/reward_unique"
+    },
+    {
+      "chance": 0.2,
+      "condition": "minecraft:random_chance"
+    }
+  ],
+  "field1": "venom_dagger_from_trial_treasure",
+  "field2": 1,
+  "field3": "ascension:venom_dagger"
+}

@@ -1,0 +1,14 @@
+{
+  "type": "ascension:infusion",
+  "base": {
+    "item": "minecraft:dragon_breath"
+  },
+  "catalyst": {
+    "item": "ascension:vexal_crystal"
+  },
+  "ore_processing": false,
+  "result": {
+    "count": 2,
+    "id": "minecraft:experience_bottle"
+  }
+}

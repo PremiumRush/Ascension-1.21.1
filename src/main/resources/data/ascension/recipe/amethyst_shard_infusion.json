@@ -1,0 +1,12 @@
+{
+  "type": "ascension:infusion",
+  "base": [],
+  "catalyst": {
+    "item": "minecraft:amethyst_block"
+  },
+  "ore_processing": true,
+  "result": {
+    "count": 4,
+    "id": "minecraft:amethyst_shard"
+  }
+}
