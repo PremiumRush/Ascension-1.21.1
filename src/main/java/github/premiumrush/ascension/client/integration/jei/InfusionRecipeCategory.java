@@ -12,6 +12,7 @@ import mezz.jei.api.recipe.IFocusGroup;
 import mezz.jei.api.recipe.RecipeIngredientRole;
 import mezz.jei.api.recipe.RecipeType;
 import mezz.jei.api.recipe.category.IRecipeCategory;
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
@@ -29,6 +30,7 @@ public class InfusionRecipeCategory implements IRecipeCategory<InfusionRecipe> {
     private final Component title;
     private final IDrawable background;
     private final IDrawable icon;
+    private final Component oreInfusion;
 
     public InfusionRecipeCategory(IGuiHelper helper) {
         this.title = Component.translatable("jei.ascension.title");
@@ -36,6 +38,7 @@ public class InfusionRecipeCategory implements IRecipeCategory<InfusionRecipe> {
         this.slot = helper.createDrawable(backgroundImage, 0, 58, 18, 18);
         this.background = helper.createDrawable(backgroundImage, 0, 0, 117, 57);
         this.icon = helper.createDrawableIngredient(VanillaTypes.ITEM_STACK, new ItemStack(ItemInit.INFUSING_TABLE.get()));
+        this.oreInfusion = Component.translatable("jei.ascension.ore_infusion");
     }
 
     @Override
@@ -54,9 +57,13 @@ public class InfusionRecipeCategory implements IRecipeCategory<InfusionRecipe> {
     }
 
     @Override
-    @Nullable
-    public IDrawable getBackground() {
-        return this.background;
+    public int getWidth() {
+        return 117;
+    }
+
+    @Override
+    public int getHeight() {
+        return 57;
     }
 
     @Override
@@ -86,15 +93,15 @@ public class InfusionRecipeCategory implements IRecipeCategory<InfusionRecipe> {
         int centerX = 9;
         int centerY = 9;
 
-        /*
         if (recipe.getOreBoolean()) {
-            guiGraphics.drawString(ChatFormatting.BOLD, "Requires Ore Upgrade", 12, 9, 0xFFFFFFFF);
-        }*/
+            Minecraft mc = Minecraft.getInstance();
+            guiGraphics.drawString(mc.font, oreInfusion, 52, 48, 0xff7700);
+        }
 
         for (int i = 0; i < size; i++) {
             this.slot.draw(guiGraphics, OUTPUT_GRID_X + centerX, OUTPUT_GRID_Y + centerY);
         }
 
-        //this.background.draw(guiGraphics);
+        this.background.draw(guiGraphics);
     }
 }

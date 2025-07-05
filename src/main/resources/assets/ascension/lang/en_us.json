@@ -2,6 +2,7 @@
   "itemGroup.ascension_tab": "Ascension",
 
   "jei.ascension.title": "Infusion",
+  "jei.ascension.ore_infusion": "Ore Infusion",
 
   "message.ascension.radiation_resistance": "\u00A7aRadiation Protection Active",
 
@@ -125,6 +126,7 @@
   "item.ascension.shark_spawn_egg": "Shark Spawn Egg",
   "item.ascension.flock_shark_spawn_egg": "Flock Shark Spawn Egg",
   "item.ascension.ghost_spawn_egg": "Ghost Spawn Egg",
+  "item.ascension.banshee_spawn_egg": "Banshee Spawn Egg",
   "item.ascension.curative_potato": "Curative Potato",
   "item.ascension.raw_shark": "Raw Shark",
   "item.ascension.cooked_shark": "Cooked Shark",

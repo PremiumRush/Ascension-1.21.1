@@ -129,7 +129,7 @@ public class InfusingTableBlock extends HorizontalDirectionalBlock implements En
                 level.setBlock(pos, level.getBlockState(pos).setValue(ORE_INFUSION, true), 1|2|4|8);
             }
             // Insert Base Item into Block
-            else if (blockEntity.getBaseItemStack() == ItemStack.EMPTY && !blockEntity.shouldRenderCatalyst()) {
+            else if (blockEntity.getBaseItemStack() == ItemStack.EMPTY && !blockEntity.shouldRenderCatalyst() && blockEntity.getItems().get(2) == ItemStack.EMPTY) {
                 if (!interactItem.is(Items.AIR) && interactItem != ItemStack.EMPTY) {
                     blockEntity.playerInsertBaseItem(level, pos, state, player, interactItem);
                 }
