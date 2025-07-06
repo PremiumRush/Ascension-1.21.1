@@ -28,7 +28,7 @@ import java.util.List;
 import static github.premiumrush.ascension.common.world.block.InfusingTableBlock.ORE_INFUSION;
 
 public interface AscensionUtil {
-    // General
+    // Client
     default void sendClientSideMessage(Level level, Player player, String message) {
         if (level.isClientSide()) {
             player.sendSystemMessage(Component.literal(message));
@@ -71,6 +71,16 @@ public interface AscensionUtil {
                     }
                 }
             }
+        }
+    }
+
+    // Maybe useful
+    default <T extends BlockEntity> T getBlockEntity(Level level, BlockPos pos, Class<T> clazz) {
+        BlockEntity be = level.getBlockEntity(pos);
+        if (clazz.isInstance(be)) {
+            return clazz.cast(be);
+        } else {
+            throw new ClassCastException("Expected BlockEntity of type " + clazz.getSimpleName() + " at " + pos + ", but found " + (be == null ? "null" : be.getClass().getSimpleName()));
         }
     }
 
