@@ -1,4 +1,4 @@
-package github.premiumrush.ascension.common.world.recipe;
+package github.premiumrush.ascension.common.world.recipe.infusion;
 
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.MapCodec;

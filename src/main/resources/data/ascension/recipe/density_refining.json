@@ -1,0 +1,7 @@
+{
+  "type": "ascension:enchantment_refining",
+  "catalyst": {
+    "item": "minecraft:iron_block"
+  },
+  "enchantment": "minecraft:density"
+}

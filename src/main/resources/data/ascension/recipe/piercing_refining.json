@@ -1,0 +1,7 @@
+{
+  "type": "ascension:enchantment_refining",
+  "catalyst": {
+    "item": "ascension:shark_tooth"
+  },
+  "enchantment": "minecraft:piercing"
+}

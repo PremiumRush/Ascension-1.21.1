@@ -1,0 +1,7 @@
+{
+  "type": "ascension:enchantment_refining",
+  "catalyst": {
+    "item": "minecraft:cobweb"
+  },
+  "enchantment": "minecraft:bane_of_arthropods"
+}

@@ -1,0 +1,7 @@
+{
+  "type": "ascension:enchantment_refining",
+  "catalyst": {
+    "item": "ascension:ice_blaze_powder"
+  },
+  "enchantment": "minecraft:frost_walker"
+}

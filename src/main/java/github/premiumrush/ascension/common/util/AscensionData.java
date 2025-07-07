@@ -10,17 +10,13 @@ import net.minecraft.world.entity.ai.attributes.Attribute;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.item.enchantment.Enchantment;
-import net.minecraft.world.item.enchantment.Enchantments;
-import oshi.util.tuples.Pair;
 import oshi.util.tuples.Quartet;
 
 import java.util.List;
 import java.util.Map;
 
 public class AscensionData {
-    // Enchantment Refiner Data
+    /*// Enchantment Refiner Data
     public static final List<Pair<ResourceKey<Enchantment>, Item>> ENCHANTMENT_TO_ITEMSTACK_LIST = List.of(
             new Pair<>(Enchantments.PROTECTION, Items.SHULKER_SHELL),
             new Pair<>(Enchantments.FIRE_PROTECTION, Items.FIRE_CHARGE),
@@ -55,7 +51,7 @@ public class AscensionData {
             new Pair<>(Enchantments.BREACH, Items.FLINT),
             new Pair<>(Enchantments.SHARPNESS, Items.AMETHYST_SHARD),
             new Pair<>(Enchantments.KNOCKBACK, ItemInit.GOLEM_GYRO.get())
-    );
+    );*/
 
     // ThunderHit Data
     public static final Map<ResourceKey<Attribute>, Float> LIGHTNING_ATTRIBUTE_TO_MODIFIER_MAP = Map.of(

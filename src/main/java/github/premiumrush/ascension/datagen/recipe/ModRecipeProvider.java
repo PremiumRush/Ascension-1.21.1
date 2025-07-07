@@ -1,7 +1,8 @@
 package github.premiumrush.ascension.datagen.recipe;
 
-import github.premiumrush.ascension.common.world.recipe.InfusionRecipeBuilder;
+import github.premiumrush.ascension.common.world.recipe.infusion.InfusionRecipeBuilder;
 import github.premiumrush.ascension.common.init.ItemInit;
+import github.premiumrush.ascension.common.world.recipe.refiner.RefinerRecipeBuilder;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.RecipeOutput;
@@ -33,8 +34,6 @@ public class ModRecipeProvider extends RecipeProvider {
         addInfusionRecipe(Items.INK_SAC, Items.GLOWSTONE_DUST, Items.GLOW_INK_SAC, 1, output);
         addInfusionRecipe(Items.ENDER_EYE, Items.GHAST_TEAR, Items.END_CRYSTAL, 1, output);
         addInfusionRecipe(Items.OBSIDIAN, Items.AMETHYST_SHARD, Items.CRYING_OBSIDIAN, 1, output);
-        //addInfusionRecipe(Items.AMETHYST_BLOCK, ItemInit.FLEROVIUM_SHARD.get(), Items.BUDDING_AMETHYST, 1, output);
-        //addInfusionRecipe(ItemInit.VEXAL_BLOCK.get(), ItemInit.FLEROVIUM_SHARD.get(), ItemInit.BUDDING_VEXAL_BLOCK.get(), 1, output);
         addInfusionRecipe(Items.DIRT, Items.BONE_MEAL, Items.GRASS_BLOCK, 1, output);
         addInfusionRecipe(Items.DIRT, Items.WHEAT_SEEDS, Items.ROOTED_DIRT, 1, output);
         addInfusionRecipe(Items.NETHERRACK, Items.WARPED_ROOTS, Items.WARPED_NYLIUM, 2, output);
@@ -72,6 +71,42 @@ public class ModRecipeProvider extends RecipeProvider {
         addOreInfusionRecipe(Items.AIR, Items.DEEPSLATE_DIAMOND_ORE, Items.DIAMOND, 4, output,"_deep_ore");
         addOreInfusionRecipe(Items.AIR, Items.NETHER_QUARTZ_ORE, Items.QUARTZ, 6, output,"");
         addOreInfusionRecipe(Items.AIR, ItemInit.DEEPSLATE_FLEROVIUM_ORE_ITEM.get(), ItemInit.FLEROVIUM_SHARD.get(), 3, output,"");
+
+
+
+        addRefiningRecipe("minecraft:protection", Items.SHULKER_SHELL, output, "protection");
+        addRefiningRecipe("minecraft:fire_protection", Items.FIRE_CHARGE, output, "fire_protection");
+        addRefiningRecipe("minecraft:feather_falling", Items.FEATHER, output, "feather_falling");
+        addRefiningRecipe("minecraft:blast_protection", Items.TNT, output, "blast_protection");
+        addRefiningRecipe("minecraft:projectile_protection", Items.ARROW, output, "projectile_protection");
+        addRefiningRecipe("minecraft:respiration", Items.TURTLE_HELMET, output, "respiration");
+        addRefiningRecipe("minecraft:thorns", Items.CACTUS, output, "thorns");
+        addRefiningRecipe("minecraft:depth_strider", Items.TURTLE_SCUTE, output, "depth_strider");
+        addRefiningRecipe("minecraft:frost_walker", ItemInit.ICE_BLAZE_POWDER.get(), output, "frost_walker");
+        addRefiningRecipe("minecraft:soul_speed", Items.RABBIT_FOOT, output, "soul_speed");
+        addRefiningRecipe("minecraft:swift_sneak", Items.ARMADILLO_SCUTE, output, "swift_sneak");
+        addRefiningRecipe("minecraft:sharpness", Items.AMETHYST_SHARD, output, "sharpness");
+        addRefiningRecipe("minecraft:smite", Items.GOLDEN_APPLE, output, "smite");
+        addRefiningRecipe("minecraft:bane_of_arthropods", Items.COBWEB, output, "bane_of_arthropods");
+        addRefiningRecipe("minecraft:knockback", ItemInit.GOLEM_GYRO.get(), output, "knockback");
+        addRefiningRecipe("minecraft:fire_aspect", Items.BLAZE_POWDER, output, "fire_aspect");
+        addRefiningRecipe("minecraft:looting", Items.GLOWSTONE_DUST, output, "looting");
+        addRefiningRecipe("minecraft:sweeping_edge", ItemInit.OBSIDIAN_ROD.get(), output, "sweeping_edge");
+        addRefiningRecipe("minecraft:efficiency", Items.DRAGON_BREATH, output, "efficiency");
+        addRefiningRecipe("minecraft:unbreaking", Items.NETHERITE_INGOT, output, "unbreaking");
+        addRefiningRecipe("minecraft:fortune", Items.EMERALD_BLOCK, output, "fortune");
+        addRefiningRecipe("minecraft:power", Items.NETHER_STAR, output, "power");
+        addRefiningRecipe("minecraft:punch", ItemInit.GOLEM_GYRO.get(), output, "punch");
+        addRefiningRecipe("minecraft:luck_of_the_sea", Items.HEART_OF_THE_SEA, output, "luck_of_the_sea");
+        addRefiningRecipe("minecraft:lure", Items.TROPICAL_FISH, output, "lure");
+        addRefiningRecipe("minecraft:loyalty", Items.ENDER_PEARL, output, "loyalty");
+        addRefiningRecipe("minecraft:impaling", Items.PRISMARINE_SHARD, output, "impaling");
+        addRefiningRecipe("minecraft:riptide", Items.PRISMARINE_CRYSTALS, output, "riptide");
+        addRefiningRecipe("minecraft:quick_charge", Items.CLOCK, output, "quick_charge");
+        addRefiningRecipe("minecraft:piercing", ItemInit.SHARK_TOOTH.get(), output, "piercing");
+        addRefiningRecipe("minecraft:density", Items.IRON_BLOCK, output, "density");
+        addRefiningRecipe("minecraft:breach", Items.FLINT, output, "breach");
+        addRefiningRecipe("minecraft:wind_burst", Items.WIND_CHARGE, output, "wind_burst");
     }
 
     private void addInfusionRecipe(ItemLike base, ItemLike catalyst, ItemLike result, int count, RecipeOutput output) {
@@ -92,5 +127,13 @@ public class ModRecipeProvider extends RecipeProvider {
                 true
         ).unlockedBy("has_infusion_table", has(ItemInit.INFUSING_TABLE.get()))
                 .save(output, result.toString()+nameaddtion+"_infusion");
+    }
+
+    private void addRefiningRecipe(String enchantment, ItemLike catalyst, RecipeOutput output, String name) {
+        new RefinerRecipeBuilder(
+            enchantment,
+            Ingredient.of(catalyst)
+        ).unlockedBy("has_enchantment_refiner", has(ItemInit.ENCHANTMENT_REFINER.get()))
+                .save(output, name+"_refining");
     }
 }

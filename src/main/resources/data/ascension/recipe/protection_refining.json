@@ -1,0 +1,7 @@
+{
+  "type": "ascension:enchantment_refining",
+  "catalyst": {
+    "item": "minecraft:shulker_shell"
+  },
+  "enchantment": "minecraft:protection"
+}

@@ -1,5 +1,6 @@
-package github.premiumrush.ascension.common.world.recipe;
+package github.premiumrush.ascension.common.world.recipe.infusion;
 
+import github.premiumrush.ascension.common.world.recipe.BaseRecipeBuilder;
 import net.minecraft.advancements.Advancement;
 import net.minecraft.advancements.AdvancementRequirements;
 import net.minecraft.advancements.AdvancementRewards;

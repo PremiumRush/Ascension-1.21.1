@@ -1,7 +1,8 @@
 package github.premiumrush.ascension.common.init;
 
 import github.premiumrush.ascension.Ascension;
-import github.premiumrush.ascension.common.world.recipe.InfusionRecipe;
+import github.premiumrush.ascension.common.world.recipe.infusion.InfusionRecipe;
+import github.premiumrush.ascension.common.world.recipe.refiner.RefinerRecipe;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.item.crafting.RecipeType;
@@ -25,4 +26,18 @@ public class RecipeInit {
             );
     public static final Supplier<RecipeSerializer<InfusionRecipe>> INFUSION_RECIPE_SERIALIZER =
             MOD_RECIPE_SERIALIZERS.register("infusion", InfusionRecipe.Serializer::new);
+
+
+    public static final Supplier<RecipeType<RefinerRecipe>> REFINER_RECIPE_TYPE =
+            MOD_RECIPE_TYPES.register(
+                    "enchantment_refining",
+                    registryName -> new RecipeType<RefinerRecipe>() {
+                        @Override
+                        public String toString() {
+                            return registryName.toString();
+                        }
+                    }
+            );
+    public static final Supplier<RecipeSerializer<RefinerRecipe>> REFINER_RECIPE_SERIALIZER =
+            MOD_RECIPE_SERIALIZERS.register("enchantment_refining", RefinerRecipe.Serializer::new);
 }

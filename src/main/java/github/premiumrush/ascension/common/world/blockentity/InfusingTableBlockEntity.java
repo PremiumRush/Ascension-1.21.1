@@ -1,8 +1,8 @@
 package github.premiumrush.ascension.common.world.blockentity;
 
 import github.premiumrush.ascension.common.world.block.InfusingTableBlock;
-import github.premiumrush.ascension.common.world.recipe.InfusionRecipe;
-import github.premiumrush.ascension.common.world.recipe.InfusionRecipeInput;
+import github.premiumrush.ascension.common.world.recipe.infusion.InfusionRecipe;
+import github.premiumrush.ascension.common.world.recipe.infusion.InfusionRecipeInput;
 import github.premiumrush.ascension.common.init.BlockEntityInit;
 import github.premiumrush.ascension.common.init.RecipeInit;
 import github.premiumrush.ascension.common.util.AscensionUtil;
@@ -171,9 +171,9 @@ public class InfusingTableBlockEntity extends BlockEntity implements Clearable, 
             }
             setChanged();
         } else if (this.infusing_ticks == 0) {
-            List<RecipeHolder<InfusionRecipe>> list = level.getRecipeManager().getRecipesFor(RecipeInit.INFUSION_RECIPE_TYPE.get(), new InfusionRecipeInput(this.getItems().getFirst(), getCatalystItemStack()), level);
-            if (!list.isEmpty()) {
-                RecipeHolder<InfusionRecipe> recipeholder = list.getFirst();
+            List<RecipeHolder<InfusionRecipe>> recipeList = level.getRecipeManager().getRecipesFor(RecipeInit.INFUSION_RECIPE_TYPE.get(), new InfusionRecipeInput(this.getItems().getFirst(), getCatalystItemStack()), level);
+            if (!recipeList.isEmpty()) {
+                RecipeHolder<InfusionRecipe> recipeholder = recipeList.getFirst();
                 ItemStack resultStack = (recipeholder.value()).assemble(new InfusionRecipeInput(this.getItems().getFirst(), getCatalystItemStack()), level.registryAccess());
                 if (resultStack.is(Items.MACE)) {
                     addThunderMaceTag("can_summon_lightning", 10, this.items.getFirst());

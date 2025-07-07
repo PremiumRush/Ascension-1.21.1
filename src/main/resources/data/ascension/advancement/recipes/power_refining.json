@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_enchantment_refiner": {
+      "conditions": {
+        "items": [
+          {
+            "items": "ascension:enchantment_refiner"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:power_refining"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_enchantment_refiner"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:power_refining"
+    ]
+  }
+}

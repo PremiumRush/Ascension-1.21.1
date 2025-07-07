@@ -1,8 +1,14 @@
 {
   "itemGroup.ascension_tab": "Ascension",
 
-  "jei.ascension.title": "Infusion",
-  "jei.ascension.ore_infusion": "Ore Infusion",
+  "jei.ascension.infusion.title": "Infusion",
+  "jei.ascension.infusion.title_ores": "Ore Infusion",
+  "jei.ascension.ore_infusion_on": "Requires Ore Infusion",
+  "jei.ascension.ore_infusion_off": "Requires no Ore Infusion",
+  "jei.ascension.refining.title": "Refining",
+  "jei.ascension.refining_hint": "Right Click with Infused Vexal Crystals to fuel",
+  "jei.ascension.refining_hint2": "Only Operates on highest Enchantment Level",
+
 
   "message.ascension.radiation_resistance": "\u00A7aRadiation Protection Active",
 

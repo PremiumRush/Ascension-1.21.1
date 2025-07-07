@@ -1,0 +1,7 @@
+{
+  "type": "ascension:enchantment_refining",
+  "catalyst": {
+    "item": "minecraft:flint"
+  },
+  "enchantment": "minecraft:breach"
+}

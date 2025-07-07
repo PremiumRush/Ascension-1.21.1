@@ -2,8 +2,8 @@ package github.premiumrush.ascension.common.world.block;
 
 import com.mojang.serialization.MapCodec;
 import github.premiumrush.ascension.common.world.blockentity.InfusingTableBlockEntity;
-import github.premiumrush.ascension.common.world.recipe.InfusionRecipe;
-import github.premiumrush.ascension.common.world.recipe.InfusionRecipeInput;
+import github.premiumrush.ascension.common.world.recipe.infusion.InfusionRecipe;
+import github.premiumrush.ascension.common.world.recipe.infusion.InfusionRecipeInput;
 import github.premiumrush.ascension.common.init.ItemInit;
 import github.premiumrush.ascension.common.init.ParticleInit;
 import github.premiumrush.ascension.common.init.RecipeInit;

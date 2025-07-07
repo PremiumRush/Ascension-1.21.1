@@ -1,4 +1,4 @@
-package github.premiumrush.ascension.common.world.recipe;
+package github.premiumrush.ascension.common.world.recipe.infusion;
 
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.RecipeInput;

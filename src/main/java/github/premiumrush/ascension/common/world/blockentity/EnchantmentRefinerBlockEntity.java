@@ -1,9 +1,12 @@
 package github.premiumrush.ascension.common.world.blockentity;
 
+import github.premiumrush.ascension.common.init.RecipeInit;
 import github.premiumrush.ascension.common.world.block.EnchantmentRefinerBlock;
 import github.premiumrush.ascension.common.init.BlockEntityInit;
 import github.premiumrush.ascension.common.init.ItemInit;
 import github.premiumrush.ascension.common.util.AscensionData;
+import github.premiumrush.ascension.common.world.recipe.refiner.RefinerRecipe;
+import github.premiumrush.ascension.common.world.recipe.refiner.RefinerRecipeInput;
 import it.unimi.dsi.fastutil.objects.Object2IntMap;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Holder;
@@ -23,10 +26,12 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.crafting.RecipeHolder;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.item.enchantment.ItemEnchantments;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.gameevent.GameEvent;
@@ -36,6 +41,7 @@ import java.util.List;
 import java.util.Random;
 
 import static github.premiumrush.ascension.common.world.block.EnchantmentRefinerBlock.ACTIVE;
+import static github.premiumrush.ascension.Ascension.LOGGER;
 
 public class EnchantmentRefinerBlockEntity extends BlockEntity implements Clearable {
     public static final List<Pair<ResourceKey<Enchantment>, Item>> ENCHANTMENT_TO_ITEMSTACK_MAP = List.of(
@@ -97,21 +103,22 @@ public class EnchantmentRefinerBlockEntity extends BlockEntity implements Cleara
     public int getFuel() {
         return this.fuel;
     }
-    public boolean addFuel(int addedFuel, ItemStack interactStack, LivingEntity entity) {
+    public boolean addFuel(int addedFuel, ItemStack interactStack, LivingEntity entity, Level level, BlockState state, BlockPos pos) {
         if ((this.fuel + addedFuel) <= 64) {
             interactStack.consume(1, entity);
             this.fuel += addedFuel;
             this.setChanged();
-            this.checkBlockFuel();
+            this.checkBlockFuel(level, state, pos);
             return true;
         } else {
             return false;
         }
     }
 
-    public void checkBlockFuel() {
-        EnchantmentRefinerBlock block =  (EnchantmentRefinerBlock) getLevel().getBlockState(getBlockPos()).getBlock();
-        block.checkFuelStage(getLevel().getBlockState(getBlockPos()), getLevel(), getBlockPos());
+    public void checkBlockFuel(Level level, BlockState state, BlockPos pos) {
+        if (state.getBlock() instanceof EnchantmentRefinerBlock block) {
+            block.checkFuelStage(state, level, pos);
+        }
     }
 
     public int getRefiningTicks() {
@@ -127,56 +134,56 @@ public class EnchantmentRefinerBlockEntity extends BlockEntity implements Cleara
     }
 
     public void tick() {
-        if (this.level == null) {
-            return;
-        }
+        Level level = this.level;
+        if (level == null) return;
 
-        if (getItemStackAt(0) != ItemStack.EMPTY && getItemStackAt(1) != ItemStack.EMPTY && getFuel() > 0) {
-            ItemStack mainStack = getItemStackAt(0);
-            ItemStack secondaryStack = getItemStackAt(1);
+        ItemStack mainStack = getItemStackAt(0);
+        ItemStack secondaryStack = getItemStackAt(1);
+        BlockPos pos = getBlockPos();
+        BlockState state = level.getBlockState(pos);
+
+        if (!mainStack.isEmpty() && !secondaryStack.isEmpty() && getFuel() > 0) {
             if (mainStack.is(Items.ENCHANTED_BOOK)) {
                 ItemEnchantments bookEnchantments = mainStack.getOrDefault(DataComponents.STORED_ENCHANTMENTS, ItemEnchantments.EMPTY);
                 List<Object2IntMap.Entry<Holder<Enchantment>>> enchHolderEntryList = bookEnchantments.entrySet().stream().toList();
-                enchantmentRefiningOperation(enchHolderEntryList, mainStack, secondaryStack, true);
-            }
-            if (!mainStack.is(Items.ENCHANTED_BOOK)) {
+                refineEnchantments(level, mainStack, secondaryStack, pos, state, enchHolderEntryList, true);
+            } else {
                 ItemEnchantments itemEnchantments = mainStack.getOrDefault(DataComponents.ENCHANTMENTS, ItemEnchantments.EMPTY);
                 List<Object2IntMap.Entry<Holder<Enchantment>>> enchHolderEntryList = itemEnchantments.entrySet().stream().toList();
-                enchantmentRefiningOperation(enchHolderEntryList, mainStack, secondaryStack, false);
+                refineEnchantments(level, mainStack, secondaryStack, pos, state, enchHolderEntryList, false);
             }
         }
     }
 
-    private void enchantmentRefiningOperation(List<Object2IntMap.Entry<Holder<Enchantment>>> enchHolderEntryList, ItemStack mainStack, ItemStack secondaryStack, boolean isBook) {
+    private void refineEnchantments(Level level, ItemStack baseStack, ItemStack catalystStack, BlockPos pos, BlockState state, List<Object2IntMap.Entry<Holder<Enchantment>>> enchHolderEntryList, boolean isBook) {
         for (Object2IntMap.Entry<Holder<Enchantment>> enchHolderEntry : enchHolderEntryList) {
-            if (this.refiningTicks == -1) {
-                for (Pair<ResourceKey<Enchantment>, Item> listEntry : AscensionData.ENCHANTMENT_TO_ITEMSTACK_LIST) {
-                    if (enchHolderEntry.getKey().is(listEntry.getA()) && secondaryStack.is(listEntry.getB())) {
-                        int enchLevel;
-                        if (isBook) {
-                            enchLevel = enchHolderEntry.getIntValue();
-                        } else {
-                            enchLevel = mainStack.getEnchantmentLevel(enchHolderEntry.getKey());
-                        }
-                        if (enchLevel == enchHolderEntry.getKey().value().getMaxLevel()) {
-                            this.getLevel().setBlock(this.getBlockPos(), this.getBlockState().setValue(ACTIVE, true), 1 | 2 | 4 | 8);
-                            setRefiningTicks(200 * enchHolderEntryList.size());
-                        }
+            Holder<Enchantment> key = enchHolderEntry.getKey();
+            int maxLevel = key.value().getMaxLevel();
+            String enchantmentName = key.getRegisteredName(); // Will check if the give enchantment name is equal to the enchantment on the item
+            List<RecipeHolder<RefinerRecipe>> recipeList = level.getRecipeManager().getRecipesFor(RecipeInit.REFINER_RECIPE_TYPE.get(), new RefinerRecipeInput(enchantmentName, catalystStack), level);
+            if (!recipeList.isEmpty()) {
+                if (this.refiningTicks == -1) {
+                    int enchLevel = isBook ? enchHolderEntry.getIntValue() : baseStack.getEnchantmentLevel(key);
+                    if (enchLevel == maxLevel) {
+                        if (!state.getValue(ACTIVE))
+                            level.setBlock(pos, state.setValue(ACTIVE, true), Block.UPDATE_ALL);
+                        setRefiningTicks(200);
+                        return; // Return, not continue, because only one enchantment should be worked on at a time
                     }
                 }
-            }
-            if (this.refiningTicks > 0) {
-                this.refiningTicks--;
-            } else if (this.refiningTicks == 0) {
-                mainStack.enchant(enchHolderEntry.getKey(), enchHolderEntry.getKey().value().getMaxLevel() + 1);
-                mainStack.set(DataComponents.RARITY, Rarity.EPIC);
-                addCompletionParticleSet(getLevel(), getBlockPos());
-                getLevel().playLocalSound(getBlockPos(), SoundEvents.ENCHANTMENT_TABLE_USE, SoundSource.BLOCKS, 1,1,false);
-                this.items.set(1, ItemStack.EMPTY);
-                this.fuel -= 1;
-                this.checkBlockFuel();
-                this.getLevel().setBlock(this.getBlockPos(), this.getBlockState().setValue(ACTIVE, false), 1 | 2 | 4 | 8);
-                resetRefiningTicks();
+                if (this.refiningTicks > 0) {
+                    this.refiningTicks--;
+                } else if (this.refiningTicks == 0) {
+                    baseStack.enchant(key, maxLevel + 1);
+                    baseStack.set(DataComponents.RARITY, Rarity.EPIC);
+                    addCompletionParticleSet(getLevel(), getBlockPos());
+                    level.playLocalSound(getBlockPos(), SoundEvents.ENCHANTMENT_TABLE_USE, SoundSource.BLOCKS, 1,1,false);
+                    this.items.set(1, ItemStack.EMPTY);
+                    this.fuel -= 1;
+                    checkBlockFuel(level, state, pos);
+                    if (state.getValue(ACTIVE)) level.setBlock(pos, state.setValue(ACTIVE, false), Block.UPDATE_ALL);
+                    resetRefiningTicks();
+                }
             }
         }
     }

@@ -105,7 +105,7 @@ public class EnchantmentRefinerBlock extends HorizontalDirectionalBlock implemen
                 blockEntity.clearContent();
                 return ItemInteractionResult.SUCCESS;
             }
-            if (interactItem.is(ItemInit.INFUSED_VEXAL_CRYSTAL.get()) && blockEntity.addFuel(1, interactItem, player)) {
+            if (interactItem.is(ItemInit.INFUSED_VEXAL_CRYSTAL.get()) && blockEntity.addFuel(1, interactItem, player, level, state, pos)) {
                 this.checkFuelStage(state,level,pos);
                 return ItemInteractionResult.SUCCESS;
             }

@@ -1,0 +1,7 @@
+{
+  "type": "ascension:enchantment_refining",
+  "catalyst": {
+    "item": "minecraft:armadillo_scute"
+  },
+  "enchantment": "minecraft:swift_sneak"
+}

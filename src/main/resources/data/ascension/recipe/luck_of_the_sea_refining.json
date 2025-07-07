@@ -1,0 +1,7 @@
+{
+  "type": "ascension:enchantment_refining",
+  "catalyst": {
+    "item": "minecraft:heart_of_the_sea"
+  },
+  "enchantment": "minecraft:luck_of_the_sea"
+}

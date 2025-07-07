@@ -2,7 +2,7 @@ package github.premiumrush.ascension.common.util;
 
 import github.premiumrush.ascension.common.world.blockentity.InfusingTableBlockEntity;
 import github.premiumrush.ascension.common.world.blockentity.item_pedestals.variants.BasePedestalBlockEntity;
-import github.premiumrush.ascension.common.world.recipe.InfusionRecipe;
+import github.premiumrush.ascension.common.world.recipe.infusion.InfusionRecipe;
 import github.premiumrush.ascension.common.init.RecipeInit;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;

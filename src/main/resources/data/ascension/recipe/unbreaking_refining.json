@@ -1,0 +1,7 @@
+{
+  "type": "ascension:enchantment_refining",
+  "catalyst": {
+    "item": "minecraft:netherite_ingot"
+  },
+  "enchantment": "minecraft:unbreaking"
+}
