@@ -62,5 +62,6 @@ public class AscensionPlugin implements IModPlugin {
     public void registerRecipeCatalysts(IRecipeCatalystRegistration registration) {
         registration.addRecipeCatalyst(new ItemStack(ItemInit.INFUSING_TABLE.get()), INFUSION_RECIPE);
         registration.addRecipeCatalyst(new ItemStack(ItemInit.ENCHANTMENT_REFINER.get()), REFINER_RECIPE);
+        registration.addRecipeCatalyst(new ItemStack(ItemInit.INFUSED_VEXAL_CRYSTAL.get()), REFINER_RECIPE);
     }
 }

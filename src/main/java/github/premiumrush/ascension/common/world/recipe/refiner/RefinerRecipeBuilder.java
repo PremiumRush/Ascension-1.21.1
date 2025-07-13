@@ -1,6 +1,5 @@
 package github.premiumrush.ascension.common.world.recipe.refiner;
 
-import github.premiumrush.ascension.common.world.recipe.refiner.RefinerRecipe;
 import net.minecraft.advancements.Advancement;
 import net.minecraft.advancements.AdvancementRequirements;
 import net.minecraft.advancements.AdvancementRewards;

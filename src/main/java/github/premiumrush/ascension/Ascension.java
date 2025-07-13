@@ -35,7 +35,6 @@ public class Ascension {
 
         LootModifierInit.GLOBAL_LOOT_MODIFIER_SERIALIZERS.register(bus);
 
-
         // Setup
         commonSetup();
     }

@@ -3,6 +3,7 @@ package github.premiumrush.ascension.datagen;
 import github.premiumrush.ascension.Ascension;
 import github.premiumrush.ascension.datagen.loot.ModGlobalLootModifiersProvider;
 import github.premiumrush.ascension.datagen.recipe.ModRecipeProvider;
+import github.premiumrush.ascension.datagen.tags.AscensionEntityTypeTagsProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
@@ -24,5 +25,6 @@ public class DataGenerators {
 
         generator.addProvider(event.includeServer(), new ModGlobalLootModifiersProvider(packOutput, lookupProvider));
         generator.addProvider(event.includeServer(), new ModRecipeProvider(packOutput, lookupProvider));
+        generator.addProvider(event.includeServer(), new AscensionEntityTypeTagsProvider(packOutput, lookupProvider, existingFileHelper));
     }
 }

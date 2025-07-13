@@ -159,7 +159,7 @@ public class EnchantmentRefinerBlockEntity extends BlockEntity implements Cleara
         for (Object2IntMap.Entry<Holder<Enchantment>> enchHolderEntry : enchHolderEntryList) {
             Holder<Enchantment> key = enchHolderEntry.getKey();
             int maxLevel = key.value().getMaxLevel();
-            String enchantmentName = key.getRegisteredName(); // Will check if the give enchantment name is equal to the enchantment on the item
+            String enchantmentName = key.getRegisteredName(); // Will check if the given enchantment name is equal to the enchantment on the item
             List<RecipeHolder<RefinerRecipe>> recipeList = level.getRecipeManager().getRecipesFor(RecipeInit.REFINER_RECIPE_TYPE.get(), new RefinerRecipeInput(enchantmentName, catalystStack), level);
             if (!recipeList.isEmpty()) {
                 if (this.refiningTicks == -1) {

@@ -3,6 +3,7 @@ package github.premiumrush.ascension.common.world.entity.custom;
 import github.premiumrush.ascension.common.init.EntityInit;
 import github.premiumrush.ascension.common.init.ItemInit;
 import github.premiumrush.ascension.common.init.MobEffectInit;
+import github.premiumrush.ascension.common.init.TagInit;
 import github.premiumrush.ascension.common.util.AscensionData;
 import net.minecraft.core.Holder;
 import net.minecraft.core.component.DataComponents;
@@ -51,7 +52,7 @@ public class VexalArrow extends AbstractArrow {
                 level().playLocalSound(result.getEntity().blockPosition(), SoundEvents.AMETHYST_BLOCK_BREAK, SoundSource.PLAYERS, 1,-1,false);
             }
             livingEntity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 30, 3));
-            if (!AscensionData.BLEEDING_INVULNERABLE.contains(livingEntity.getType())) {
+            if (!livingEntity.getType().is(TagInit.INVULNERABLE_TO_BLEEDING)) {
                 livingEntity.addEffect(new MobEffectInstance(MobEffectInit.BLEEDING, 100, 1));
             }
         }

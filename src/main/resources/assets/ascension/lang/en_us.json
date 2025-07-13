@@ -44,7 +44,7 @@
   "tooltip.ascension.blaze_sword_item.tooltip": "\u00A74Sets Enemies on Fire, but burns You if the Enemy is immune to it",
   "tooltip.ascension.ice_sword_item.tooltip": "\u00A7bFreezes and Weakens Enemies",
   "tooltip.ascension.winged_sword_item.tooltip": "\u00A77Levitates Enemies on Hit, Launches them on Use",
-  "tooltip.ascension.razor_sword_item.tooltip": "\u00A74Cuts Bleeding Wounds into Enemies",
+  "tooltip.ascension.razor_sword_item.tooltip": "\u00A74Cuts Wounds into Enemies that can Bleed",
   "tooltip.ascension.ice_armor1.tooltip": "\u00A77Full Set Bonus: \u00A7bFreezing Resistance and Frost Walker",
   "tooltip.ascension.ice_armor2.tooltip": "\u00A77Higher Knockback-Resistance",
   "tooltip.ascension.ice_armor3.tooltip": "\u00A77Allows the Player to walk on Powder Snow",

@@ -1,6 +1,7 @@
 package github.premiumrush.ascension.common.world.item;
 
 import github.premiumrush.ascension.common.init.MobEffectInit;
+import github.premiumrush.ascension.common.init.TagInit;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.LivingEntity;
@@ -11,8 +12,6 @@ import net.minecraft.world.item.TooltipFlag;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
-
-import static github.premiumrush.ascension.common.util.AscensionData.BLEEDING_INVULNERABLE;
 
 public class RazorSwordItem extends SwordItem {
     public RazorSwordItem(Tier tier, Properties properties) {
@@ -26,10 +25,10 @@ public class RazorSwordItem extends SwordItem {
     }
 
     @Override
-    public boolean hurtEnemy(@NotNull ItemStack pStack, @NotNull LivingEntity pTarget, @NotNull LivingEntity pAttacker) {
-        if(!BLEEDING_INVULNERABLE.contains(pTarget.getType())) {
-            pTarget.addEffect(new MobEffectInstance(MobEffectInit.BLEEDING, 120, 1), pAttacker);
+    public boolean hurtEnemy(@NotNull ItemStack stack, @NotNull LivingEntity target, @NotNull LivingEntity attacker) {
+        if (!target.getType().is(TagInit.INVULNERABLE_TO_BLEEDING)) {
+            target.addEffect(new MobEffectInstance(MobEffectInit.BLEEDING, 120, 1), attacker);
         }
-        return super.hurtEnemy(pStack,pTarget,pAttacker);
+        return super.hurtEnemy(stack,target,attacker);
     }
 }
